@@ -45,7 +45,7 @@ namespace ToDoApp.Models
                     Id = item.Id,
                     Name = item.Name,
                     IsCompleted = item.IsCompleted,
-                    DataCompleted = item.DataCompleted,
+                    DateCompleted = item.DateCompleted,
                 };
             }
 

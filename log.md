@@ -21,3 +21,18 @@
 - Add default item first
 - Specify server interactivity
 - refresh the list > inside add item method
+
+## Input task name
+- Change list item type to input element
+- two way data biding `@bind-value`
+
+## Mark task as completed
+- display checkbox
+    - show in one row
+- display completed date
+- remove bullet point
+- pop up the real data
+    - do this in model itself
+    - add private variable
+    - in set: when setting, assign datetime now
+- strikethrough completed

@@ -14,3 +14,10 @@
 - Get items from repo
 - display them
 - add to NavMenu
+
+## Add new task button
+- Add button
+- Add method
+- Add default item first
+- Specify server interactivity
+- refresh the list > inside add item method

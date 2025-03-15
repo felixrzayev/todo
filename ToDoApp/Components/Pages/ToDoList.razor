@@ -1,5 +1,10 @@
 ﻿@page "/todolist"
+@rendermode InteractiveServer
 <h3>To Do</h3>
+<br />
+
+<button type="button" class="btn btn-outline-primary" @onclick="AddTask">Add Task</button>
+<br />
 <br />
 
 @if (items != null && items.Count > 0)
@@ -13,7 +18,7 @@
             </li>
         }
     </ul>
-    
+
 }
 
 
@@ -21,4 +26,9 @@
 
     private List<ToDoItem> items = ToDoItemsRepo.GetItems();
 
+    private void AddTask()
+    {
+        ToDoItemsRepo.AddItem( new ToDoItem{ Name = "New Task" });
+        items = ToDoItemsRepo.GetItems();
+    }
 }
